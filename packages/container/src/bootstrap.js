@@ -1,18 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from "./App";
-const mount = (el) => {
-    ReactDOM.render(
-        <App />,
-        el
-    )
-}
+import App from './App';
 
-if (process.env.NODE_ENV === 'development') {
-    const el = document.querySelector('#root');
-    if (el) {
-        mount(el);
-    }
-}
-
-export { mount };
+ReactDOM.render(<App />, document.querySelector('#root'));
